@@ -4,10 +4,7 @@
 def fibonacci(n):
     f = [0] * n
     for i in range(n):
-        if i <= 1:
-            f[i] = i
-        else:
-            f[i] = f[i-1] + f[i-2]
+        f[i] = i if i <= 1 else f[i-1] + f[i-2]
     return f
 
 

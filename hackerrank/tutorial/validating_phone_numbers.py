@@ -2,8 +2,5 @@
 
 import re
 
-n = int(input())
-for i in range(n):
-    str = input()
-    match = re.search(r'^[789]\d{9}$', str)
-    print('YES' if match else 'NO')
+for i in range(int(input())):
+    print('YES' if re.search(r'^[789]\d{9}$', input()) else 'NO')
