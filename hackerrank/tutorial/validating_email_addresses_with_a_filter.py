@@ -5,8 +5,7 @@ import re
 
 def fun(s):
     pattern = r'^[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]{1,3}$'
-    match = re.search(pattern, s)
-    return True if match else False
+    return bool(re.search(pattern, s))
 
 
 def filter_mail(emails):
