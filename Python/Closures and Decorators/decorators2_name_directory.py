@@ -1,12 +1,10 @@
 # http://www.hackerrank.com/contests/python-tutorial/challenges/decorators-2-name-directory
 
-from operator import itemgetter
-
 
 def person_lister(f):
     def inner(people):
         ans = []
-        for person in sorted(people, key=itemgetter(2)):
+        for person in sorted(people, key=lambda x: int(x[2])):
             ans.append(f(person))
         return ans
     return inner
