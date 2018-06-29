@@ -17,5 +17,4 @@ for i in range(1, len(s)):
         j = i
         w.add(weight(s[i]))
 for _ in range(n):
-    i = int(input())
-    print('Yes' if i in w else 'No')
+    print('Yes' if int(input()) in w else 'No')
