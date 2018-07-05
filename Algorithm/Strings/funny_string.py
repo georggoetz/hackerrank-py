@@ -7,8 +7,8 @@ for _ in range(t):
     funny = True
     for i in range(len(s)-1):
         ds = abs(s[i+1]-s[i])
-        rs = abs(r[i+1]-r[i])
-        if ds != rs:
+        dr = abs(r[i+1]-r[i])
+        if ds != dr:
             funny = False
             break
     print('Funny' if funny else 'Not Funny')
